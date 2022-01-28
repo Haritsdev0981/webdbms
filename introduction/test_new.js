@@ -217,22 +217,27 @@ console.log('nama ku :'+ identitas.firstName,''+identitas.lastName)*/
 // console.table(identitas)
 
 
-let tabel = {
-    kendaraan : {
-        mobil:'peugeot',
-        motor:'V-xion',
-        sepeda:'united'
-    },
-    jalan : 'Jalan Berkah',
-    kota: 'bekasi',
-    platNomor:'jabodetabek',
-    kereta: {
-        namaKa: 'Argo bromo anggrek',
-        tujuan: 'senen-pasar turi'
-    }
-}
+// let tabel = {
+//     kendaraan : {
+//         mobil:'peugeot',
+//         motor:'V-xion',
+//         sepeda:'united'
+//     },
+//     jalan : 'Jalan Berkah',
+//     kota: 'bekasi',
+//     platNomor:'jabodetabek',
+//     kereta: {
+//         namaKa: 'Argo bromo anggrek',
+//         tujuan: 'senen-pasar turi'
+//     }
+// }
 
-console.table(tabel)
+// console.table(tabel)
+
+const mobil = 'peugeot'
+const motor = 'ninja'
+
+console.log(`mobil saya adalah ${mobil} dan motor saya adalah ${motor}`)
 
 
 
