@@ -348,4 +348,4 @@ function kendaraan(mobil, callback) {
          }
      }
 
-     kendaraan(150, cc)
+     kendaraan(110, tahun)
