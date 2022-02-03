@@ -234,10 +234,118 @@ console.log('nama ku :'+ identitas.firstName,''+identitas.lastName)*/
 
 // console.table(tabel)
 
-const mobil = 'peugeot'
-const motor = 'ninja'
+// const mobil = 'peugeot'
+// const motor = 'ninja'
 
-console.log(`mobil saya adalah ${mobil} dan motor saya adalah ${motor}`)
+// console.log(`mobil saya adalah ${mobil} dan motor saya adalah ${motor}`)
 
 
+/**
+ * Function
+ * merupakan sebuah blok kode untuk membungkus sebuah proses penulisan kode agar tidak diulang kembali
+ */
 
+
+// todo funcion biasa
+
+// function name(params) {
+//     console.log('saya belajar javaScript')
+// }
+
+// name()
+
+// todo anonymous funcion
+
+// const anon = function(param){
+//     console.log(param)
+// }
+// anon('Saya belajar javaScript')
+
+//todo arrow function
+
+// let third = () =>{
+//     console.log('ini adalah arrow funcion')
+// }
+// third()
+
+/**
+ * !High Order Funciont
+ * fungsi yang menerima argumen berupa fungsi lain serta return bisa berupa fungsi juga.
+ */
+
+//todo: normal funcion
+// function genap(number) {
+//     return number % 2 == 0
+// }
+// function buatNgePrint(number) {
+//     let isTrue = genap(number)
+//     if(isTrue){
+//         console.log(`${number} adalah bilangan genap`)
+//     }else{
+//         console.log(`${number} adalah bilangan ganjil`)
+
+//     }
+// }
+// buatNgePrint(10)
+
+//todo: High Order Function
+// function genap(number) {
+//     return number % 2 == 0
+// }
+// function print(number, callBack) {
+//     let isTrue = callBack(number)
+//     if(isTrue){
+//         console.log(`${number} adalah bilangan genap`)
+//     }else{
+//         console.log(`${number} adalah bilangan ganjil`)
+
+//     }
+// }
+// print(10, genap)
+
+// function sport(mobil) {
+//     return mobil >= 100
+// }
+
+// function warna(mobil) {
+//     return mobil == 'merah'
+// }
+
+// function kendaraan(mobil, callback) {
+//     let a = callback(mobil)
+//     if(a){
+//         console.log(`mobil dengan ${mobil} adalah mobil saya`)
+//     }else{
+//         console.log(`mobil dengan ${mobil} bukan mobil saya`)
+//     }
+// }
+
+// kendaraan()
+
+//!SOAL High Order Function
+
+/**
+ * Terdapat 2 funcion 
+ * - tahun <= 2001 itu gaperlu bayar pajak
+ * 
+ * cc >=150 harus bayar pajak
+ */
+
+function tahun(mobil) {
+    return mobil <= 2001
+}
+
+function cc(mobil) {
+    return mobil >= 150
+}
+
+function kendaraan(mobil, callback) {
+         let a = callback(mobil)
+         if(a){
+             console.log(`mobil dengan ${mobil} gaperlu bayar pajak`)
+         }else{
+             console.log(`mobil dengan ${mobil} harus bayar pajak`)
+         }
+     }
+
+     kendaraan(2000, tahun)
