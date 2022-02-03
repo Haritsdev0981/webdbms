@@ -332,7 +332,7 @@ console.log('nama ku :'+ identitas.firstName,''+identitas.lastName)*/
  */
 
 function tahun(mobil) {
-    return mobil <= 2001
+    return mobil >= 2001
 }
 
 function cc(mobil) {
@@ -342,10 +342,10 @@ function cc(mobil) {
 function kendaraan(mobil, callback) {
          let a = callback(mobil)
          if(a){
-             console.log(`mobil dengan ${mobil} gaperlu bayar pajak`)
-         }else{
              console.log(`mobil dengan ${mobil} harus bayar pajak`)
+         }else{
+             console.log(`mobil dengan ${mobil} gaperlu bayar pajak`)
          }
      }
 
-     kendaraan(2000, tahun)
+     kendaraan(150, cc)
